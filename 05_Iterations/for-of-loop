@@ -1,0 +1,35 @@
+
+
+// myarr=[1,2,3,4,5]
+// for (const i of myarr) {
+//     console.log(i)
+// }
+
+
+// const greetings="Hello World"
+// for (const greet of greetings) {
+//     if(greet==" "){
+//         continue
+//     }
+//     console.log(greet)
+// }
+
+
+const map=new Map()
+map.set("USA","United States of America")
+map.set("IND","India")
+map.set("kr","Korea")
+
+// for (const [keys,values] of map) {
+//     console.log(`${keys} is short form of ${values}`)
+// }
+
+//object is not iterable
+const obj={
+    game1:"NFS",
+    game2:"CS-GO"
+}
+for (const game of obj) {
+    console.log(game);
+    
+}
