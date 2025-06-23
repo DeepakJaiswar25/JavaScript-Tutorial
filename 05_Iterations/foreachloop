@@ -1,0 +1,33 @@
+const coding=['js','java','python','ruby']
+
+//Using normal function
+// coding.forEach(function(name){
+//     console.log(name);
+    
+// })
+
+//Using Arrow function
+// coding.forEach((name)=>{
+//     console.log(name)
+// })
+
+//Using different function
+// function print(item){
+//     console.log(item)
+// }
+// coding.forEach(print)
+
+const mycoding=[
+    {
+        language:"Java",
+        extension:".java"
+    },
+    {
+        language:"Javascript",
+        extension:".js"
+    }
+]
+mycoding.forEach((item)=>{
+    console.log(item.language)
+    console.log(item.extension)
+})
