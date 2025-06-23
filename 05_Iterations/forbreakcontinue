@@ -1,0 +1,36 @@
+// For loop
+// for(let i=0;i<=10;i++){
+//     if(i==5){
+//         console.log("5 Detected");
+        
+//     }
+//    console.log(i);
+// }
+//Double for loop
+// for(let i=1;i<=10;i++){
+//     for(let j=1;j<=10;j++){
+//         console.log(`${i} x ${j} = ${i*j}`)
+//     }
+// }
+
+//Using break in for loop
+// for(let i=0;i<=10;i++){
+//         if(i==5){
+//         break;            
+//         }
+//        console.log(i);
+//     }
+
+    //Using continue in for loop
+    // for(let i=0;i<=10;i++){
+    //     if(i==5){
+    //     continue;            
+    //     }
+    //    console.log(i);
+    // }
+
+    //Using for loop to iterate Arrays
+    const myArray=["Batman","Flash","Superman"]
+    for(let i=0;i<myArray.length;i++){
+        console.log(myArray[i])
+    }
