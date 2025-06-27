@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    
+</body>
+<script>
+    const div=document.createElement('div')
+    console.log(div)
+    div.className="main"
+    div.id="6"
+    div.style.backgroundColor='green'
+    div.style.padding='12px'
+    // div.innerHTML='Chai aur Code'   Direct Method
+    const text= document.createTextNode('Chai aur Javascript')  //Optimized way to add 
+    div.append(text)
+
+    document.body.appendChild(div)
+
+    function addcolorNode(color,text){
+
+    const div=document.createElement('div')
+    console.log(div)
+    div.className="main"
+    div.id="6"
+    div.style.backgroundColor=color
+    div.style.padding='12px'
+    // div.innerHTML='Chai aur Code'   Direct Method
+     const finaltext= document.createTextNode(text)  //Optimized way to add 
+    div.append(finaltext)
+    document.body.appendChild(div)
+    }
+    const col=['red','green','blue']
+    const coltext=['Red','Green','Blue']
+    
+    for(let i=0;i<col.length;i++){
+        addcolorNode(col[i],coltext[i])
+    }
+
+</script>
+</html>
