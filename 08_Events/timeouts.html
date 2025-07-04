@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+const greet=   setTimeout(function(){
+    console.log("Helllo Deepak")
+   },3000)
+
+   const title=document.querySelector('h1')
+   const button=document.getElementById('stop')
+   console.log(button)
+
+   const text=function(){
+    title.innerHTML='Best JS series'
+   }
+   const setext=setTimeout(text,4000);
+
+   button.addEventListener('click',function(e){
+    clearTimeout(setext)
+    console.log('Timeout Stopped');
+    
+   })
+</script>
+</html>
