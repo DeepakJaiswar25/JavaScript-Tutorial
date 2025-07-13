@@ -57,4 +57,3 @@ String.prototype.truelength=function(){
 
 anothername.truelength()
 "Hitesh     ".truelength()
-
