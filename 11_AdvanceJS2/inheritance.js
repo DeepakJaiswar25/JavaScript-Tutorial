@@ -8,7 +8,6 @@ class user{
     console.log(`Username: ${this.username}`)
    }
 
-
 }
 
 class teacher extends user{
