@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <button id="green">Green</button>
+    <button id="orange">Orange</button>
+</body>
+<script>
+// document.querySelector('#green').addEventListener('click',()=>{
+//     document.querySelector('body').style.backgroundColor='green'
+// })
+// document.querySelector('#orange').addEventListener('click',()=>{
+//     document.querySelector('body').style.backgroundColor='orange'
+// })
+
+
+function handleclick(color){
+
+    return function(){
+        document.querySelector('body').style.backgroundColor=`${color}` 
+    }
+   
+}
+document.querySelector('#orange').addEventListener('click',handleclick('orange'))
+document.querySelector('#green').addEventListener('click',handleclick('green'))
+</script>
+<script>
+//lexical scope
+function user(){
+  let username='Deepak'
+   function inner(){
+    let secret='Abc@123'
+    console.log(username)
+    inner2()
+   }
+   function inner2(){
+    // console.log(secret)
+   }
+
+   inner()
+}
+user()
+
+
+//closure
+function makefunc(){
+     const name="Mozilla"
+     function displayName(){
+        console.log(name);
+    
+     }
+     return displayName;
+     
+}
+const myfunc= makefunc();
+myfunc();
+
+</script>
+</html>
