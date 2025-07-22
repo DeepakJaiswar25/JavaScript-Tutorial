@@ -20,4 +20,5 @@ class teacher extends users{
 }
 
 const chai=  new teacher('Deepak','DSA')
-chai.logMe()  // it gives error because static methods are accessed only by class and not by instance if it is users.logMe it will work
+chai.logMe()  
+// it gives error because static methods are accessed only by class and not by instance if it is users.logMe it will work
